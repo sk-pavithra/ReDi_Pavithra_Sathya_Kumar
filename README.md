@@ -42,22 +42,22 @@ Geographical coverage: 332 airports across Europe
 
 Key Columns Used
 
-FLT_DATE → daily timestamp
-APT_ICAO → airport ICAO code
-APT_NAME → airport name
-STATE_NAME → country
-FLT_DEP_1 / FLT_ARR_1 / FLT_TOT_1 → daily departures, arrivals, and total flights
-FLT_DEP_IFR_2 / FLT_ARR_IFR_2 / FLT_TOT_IFR_2 → IFR (Instrument Flight Rules) flights
-MONTH_NUM, YEAR, DAYOFWEEK → time-based indicators
-IFR_ratio → created feature: IFR flights / total flights
+  FLT_DATE → daily timestamp
+  APT_ICAO → airport ICAO code
+  APT_NAME → airport name
+  STATE_NAME → country
+  FLT_DEP_1 / FLT_ARR_1 / FLT_TOT_1 → daily departures, arrivals, and total flights
+  FLT_DEP_IFR_2 / FLT_ARR_IFR_2 / FLT_TOT_IFR_2 → IFR (Instrument Flight Rules) flights
+  MONTH_NUM, YEAR, DAYOFWEEK → time-based indicators
+  IFR_ratio → created feature: IFR flights / total flights
 
 Cleaning Performed
 
-Filled missing IFR values with 0
-Converted date to datetime
-Created IFR ratio
-Selected subsets (Top 50 EU airports, and later Germany’s busiest airports)
-Created lag features for forecasting
+  Filled missing IFR values with 0
+  Converted date to datetime
+  Created IFR ratio
+  Selected subsets (Top 50 EU airports, and later Germany’s busiest airports)
+  Created lag features for forecasting
 
 Project Workflow
 1. Data Loading & Cleaning
